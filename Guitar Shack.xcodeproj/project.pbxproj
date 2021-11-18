@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2D771B742746BBD400D729D5 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B732746BBD400D729D5 /* Warehouse.swift */; };
+		2D771B762746BEF100D729D5 /* ReorderLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B752746BEF100D729D5 /* ReorderLevel.swift */; };
 		703721CA2746AA84009E533F /* ReorderNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721C92746AA84009E533F /* ReorderNotificationTests.swift */; };
 		703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
 		703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D771B732746BBD400D729D5 /* Warehouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warehouse.swift; sourceTree = "<group>"; };
+		2D771B752746BEF100D729D5 /* ReorderLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderLevel.swift; sourceTree = "<group>"; };
 		703721C92746AA84009E533F /* ReorderNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderNotificationTests.swift; sourceTree = "<group>"; };
 		703721CB2746ACEC009E533F /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
 		703721CE2746AF73009E533F /* ReorderChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderChecker.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				OBJ_9 /* Guitar_Shack.swift */,
 				703721CB2746ACEC009E533F /* NotificationSender.swift */,
 				703721CE2746AF73009E533F /* ReorderChecker.swift */,
+				2D771B732746BBD400D729D5 /* Warehouse.swift */,
+				2D771B752746BEF100D729D5 /* ReorderLevel.swift */,
 			);
 			name = "Guitar Shack";
 			path = "Sources/Guitar Shack";
@@ -243,7 +249,9 @@
 			files = (
 				703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */,
 				703721CA2746AA84009E533F /* ReorderNotificationTests.swift in Sources */,
+				2D771B762746BEF100D729D5 /* ReorderLevel.swift in Sources */,
 				OBJ_45 /* Guitar_ShackTests.swift in Sources */,
+				2D771B742746BBD400D729D5 /* Warehouse.swift in Sources */,
 				703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

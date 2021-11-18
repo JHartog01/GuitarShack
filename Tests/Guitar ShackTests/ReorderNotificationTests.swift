@@ -17,11 +17,28 @@ class ReorderNotificationTests: XCTestCase {
     
     func testProductNeedsReordering() {
         var notification : MockNotificationSender = MockNotificationSender()
-        let reorderChecker = ReorderChecker(notification)
+        var warehouse : Warehouse = StubWarehouse(5)
+        var reorderLevel : ReorderLevel = StubReorderLevel(4)
+        let reorderChecker = ReorderChecker(notification, warehouse, reorderLevel)
         
         reorderChecker.productSold(811,1)
         XCTAssertEqual(notification.message, "faisal")
     }
+    
+    private class StubWarehouse: Warehouse {
+        let stock: Int
+        init (_ stock:Int) {
+            self.stock = stock
+        }
+    }
+    
+    private class StubReorderLevel: ReorderLevel {
+        let reorderLevel: Int
+        init (_ reorderLevel: Int) {
+            self.reorderLevel = reorderLevel
+        }
+    }
+    
     
     
     
