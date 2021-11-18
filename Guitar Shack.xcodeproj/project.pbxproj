@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		703721CA2746AA84009E533F /* ReorderNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721C92746AA84009E533F /* ReorderNotificationTests.swift */; };
+		703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
+		703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
+		703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CE2746AF73009E533F /* ReorderChecker.swift */; };
 		OBJ_27 /* Guitar_Shack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Guitar_Shack.swift */; };
 		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_45 /* Guitar_ShackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Guitar_ShackTests.swift */; };
@@ -45,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703721C92746AA84009E533F /* ReorderNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderNotificationTests.swift; sourceTree = "<group>"; };
+		703721CB2746ACEC009E533F /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
+		703721CE2746AF73009E533F /* ReorderChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderChecker.swift; sourceTree = "<group>"; };
 		"Guitar Shack::Guitar Shack::Product" /* Guitar_Shack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Guitar_Shack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Guitar Shack::Guitar ShackTests::Product" /* Guitar_ShackTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = Guitar_ShackTests.xctest; path = "Guitar ShackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* Guitar_ShackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar_ShackTests.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* Guitar_ShackTests.swift */,
+				703721C92746AA84009E533F /* ReorderNotificationTests.swift */,
 			);
 			name = "Guitar ShackTests";
 			path = "Tests/Guitar ShackTests";
@@ -100,7 +108,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -111,7 +119,6 @@
 				OBJ_20 /* README.md */,
 				OBJ_21 /* ~$Guitar Shack Reorder Notification.xlsx */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -126,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Guitar_Shack.swift */,
+				703721CB2746ACEC009E533F /* NotificationSender.swift */,
+				703721CE2746AF73009E533F /* ReorderChecker.swift */,
 			);
 			name = "Guitar Shack";
 			path = "Sources/Guitar Shack";
@@ -197,7 +206,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,6 +225,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_27 /* Guitar_Shack.swift in Sources */,
+				703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */,
+				703721CA2746AA84009E533F /* ReorderNotificationTests.swift in Sources */,
 				OBJ_45 /* Guitar_ShackTests.swift in Sources */,
+				703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
