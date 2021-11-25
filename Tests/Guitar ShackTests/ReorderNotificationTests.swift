@@ -39,6 +39,18 @@ class ReorderNotificationTests: XCTestCase {
         XCTAssertEqual(notification.message, "")
     }
     
+    func testWhenNotificationAlreadySentProductDoesntNeedReordering() {
+        let notification : MockNotificationSender = MockNotificationSender()
+        let warehouse : Warehouse = StubWarehouse(4)
+        let reorderLevel : ReorderLevel = StubReorderLevel(4)
+        let reorderChecker =  ReorderChecker(notification, warehouse, reorderLevel)
+        
+        reorderChecker.productSold(811, 1)
+        
+        XCTAssertEqual(notification.message, "")
+        
+    }
+    
     private class StubWarehouse: Warehouse {
         func getStock(_ id: Int) -> Int {
             return stock

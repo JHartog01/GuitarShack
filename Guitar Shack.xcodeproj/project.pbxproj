@@ -27,9 +27,11 @@
 		703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
 		703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
 		703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CE2746AF73009E533F /* ReorderChecker.swift */; };
+		70D37466274FE68300C91F22 /* NotificationMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37465274FE68300C91F22 /* NotificationMessageTests.swift */; };
+		70D37468274FE81600C91F22 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37467274FE81600C91F22 /* MessageBuilder.swift */; };
+		70D3746A274FE88300C91F22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37469274FE88300C91F22 /* Product.swift */; };
 		OBJ_27 /* Guitar_Shack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Guitar_Shack.swift */; };
 		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_45 /* Guitar_ShackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Guitar_ShackTests.swift */; };
 		OBJ_47 /* Guitar_Shack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Guitar Shack::Guitar Shack::Product" /* Guitar_Shack.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,9 +58,11 @@
 		703721C92746AA84009E533F /* ReorderNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderNotificationTests.swift; sourceTree = "<group>"; };
 		703721CB2746ACEC009E533F /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
 		703721CE2746AF73009E533F /* ReorderChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderChecker.swift; sourceTree = "<group>"; };
+		70D37465274FE68300C91F22 /* NotificationMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMessageTests.swift; sourceTree = "<group>"; };
+		70D37467274FE81600C91F22 /* MessageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBuilder.swift; sourceTree = "<group>"; };
+		70D37469274FE88300C91F22 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		"Guitar Shack::Guitar Shack::Product" /* Guitar_Shack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Guitar_Shack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Guitar Shack::Guitar ShackTests::Product" /* Guitar_ShackTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = Guitar_ShackTests.xctest; path = "Guitar ShackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* Guitar_ShackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar_ShackTests.swift; sourceTree = "<group>"; };
 		OBJ_19 /* Guitar Shack Reorder Notification.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guitar Shack Reorder Notification.xlsx"; sourceTree = "<group>"; };
 		OBJ_20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_21 /* ~$Guitar Shack Reorder Notification.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "~$Guitar Shack Reorder Notification.xlsx"; sourceTree = "<group>"; };
@@ -96,7 +100,7 @@
 		OBJ_11 /* Guitar ShackTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* Guitar_ShackTests.swift */,
+				70D37465274FE68300C91F22 /* NotificationMessageTests.swift */,
 				703721C92746AA84009E533F /* ReorderNotificationTests.swift */,
 			);
 			name = "Guitar ShackTests";
@@ -141,6 +145,8 @@
 				703721CE2746AF73009E533F /* ReorderChecker.swift */,
 				2D771B732746BBD400D729D5 /* Warehouse.swift */,
 				2D771B752746BEF100D729D5 /* ReorderLevel.swift */,
+				70D37467274FE81600C91F22 /* MessageBuilder.swift */,
+				70D37469274FE88300C91F22 /* Product.swift */,
 			);
 			name = "Guitar Shack";
 			path = "Sources/Guitar Shack";
@@ -249,8 +255,10 @@
 			files = (
 				703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */,
 				703721CA2746AA84009E533F /* ReorderNotificationTests.swift in Sources */,
+				70D3746A274FE88300C91F22 /* Product.swift in Sources */,
+				70D37466274FE68300C91F22 /* NotificationMessageTests.swift in Sources */,
+				70D37468274FE81600C91F22 /* MessageBuilder.swift in Sources */,
 				2D771B762746BEF100D729D5 /* ReorderLevel.swift in Sources */,
-				OBJ_45 /* Guitar_ShackTests.swift in Sources */,
 				2D771B742746BBD400D729D5 /* Warehouse.swift in Sources */,
 				703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */,
 			);
