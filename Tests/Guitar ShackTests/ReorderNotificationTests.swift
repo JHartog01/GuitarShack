@@ -25,7 +25,7 @@ class ReorderNotificationTests: XCTestCase {
         let reorderChecker = ReorderChecker(notification, warehouse, reorderLevel)
         
         reorderChecker.productSold(811,1)
-        XCTAssertEqual(notification.message, "faisal")
+        XCTAssertEqual(notification.message, MessageBuilder(warehouse.getProduct(811)).build())
     }
     
     func testWhenDoesntHitReorderThresholdProductDoesntNeedReordering() {
@@ -52,13 +52,13 @@ class ReorderNotificationTests: XCTestCase {
     }
     
     private class StubWarehouse: Warehouse {
-        func getStock(_ id: Int) -> Int {
-            return stock
+        func getProduct(_ id: Int) -> Product {
+            return product
         }
         
-        let stock: Int
+        let product: Product
         init (_ stock:Int) {
-            self.stock = stock
+            self.product = Product(811,stock,"",0,0)
         }
     }
     

@@ -13,7 +13,7 @@ class NotificationMessageTests: XCTestCase {
     var message : String = ""
     
     override func setUp() {
-        let product = Product(811,"Epiphone Les Paul Classic In Worn Heritage Cherry Sunburst",30,20)
+        let product = Product(811,0,"Epiphone Les Paul Classic In Worn Heritage Cherry Sunburst",30,20)
         let messageBuilder = MessageBuilder(product)
         message = messageBuilder.build()
     }
