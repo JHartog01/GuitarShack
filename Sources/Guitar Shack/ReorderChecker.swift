@@ -17,6 +17,8 @@ class ReorderChecker {
         self.reorderLevel = reorderLevel
     }
     func productSold(_ id:Int, _ quantity: Int) {
-        
+        if (warehouse.getStock(id) - quantity) <= reorderLevel.ofProduct(id) {
+            notification.send("faisal")
+        }
     }
 }

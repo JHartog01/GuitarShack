@@ -8,6 +8,6 @@
 import Foundation
 
 protocol NotificationSender{
-    
+    func send(_ message: String)
     
 }

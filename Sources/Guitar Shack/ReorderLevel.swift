@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ReorderLevel {
-    
+    func ofProduct(_ id : Int) -> Int
 }

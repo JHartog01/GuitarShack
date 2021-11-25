@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Warehouse {
-    
+    func getStock(_ id : Int) -> Int
 }
