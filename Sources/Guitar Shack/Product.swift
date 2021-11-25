@@ -9,8 +9,14 @@ import Foundation
 
 class Product {
     let id : Int
+    let description : String
+    let rackSpace : Int
+    let minimumOrder : Int
     
-    init(_ id:Int) {
+    init(_ id:Int, _ description:String, _ rackSpace:Int, _ minimumOrder:Int) {
         self.id = id
+        self.description = description
+        self.rackSpace = rackSpace
+        self.minimumOrder = minimumOrder
     }
 }

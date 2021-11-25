@@ -32,7 +32,6 @@
 		70D3746A274FE88300C91F22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37469274FE88300C91F22 /* Product.swift */; };
 		70D3746B274FEB0400C91F22 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37467274FE81600C91F22 /* MessageBuilder.swift */; };
 		70D3746C274FEB1E00C91F22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37469274FE88300C91F22 /* Product.swift */; };
-		OBJ_27 /* Guitar_Shack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Guitar_Shack.swift */; };
 		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_47 /* Guitar_Shack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Guitar Shack::Guitar Shack::Product" /* Guitar_Shack.framework */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		OBJ_20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_21 /* ~$Guitar Shack Reorder Notification.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "~$Guitar Shack Reorder Notification.xlsx"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Guitar_Shack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar_Shack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +140,6 @@
 		OBJ_8 /* Guitar Shack */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Guitar_Shack.swift */,
 				703721CB2746ACEC009E533F /* NotificationSender.swift */,
 				703721CE2746AF73009E533F /* ReorderChecker.swift */,
 				2D771B732746BBD400D729D5 /* Warehouse.swift */,
@@ -240,7 +237,6 @@
 			files = (
 				70D3746B274FEB0400C91F22 /* MessageBuilder.swift in Sources */,
 				70D3746C274FEB1E00C91F22 /* Product.swift in Sources */,
-				OBJ_27 /* Guitar_Shack.swift in Sources */,
 				703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
