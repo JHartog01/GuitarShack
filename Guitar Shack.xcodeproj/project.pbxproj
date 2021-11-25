@@ -30,6 +30,8 @@
 		70D37466274FE68300C91F22 /* NotificationMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37465274FE68300C91F22 /* NotificationMessageTests.swift */; };
 		70D37468274FE81600C91F22 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37467274FE81600C91F22 /* MessageBuilder.swift */; };
 		70D3746A274FE88300C91F22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37469274FE88300C91F22 /* Product.swift */; };
+		70D3746B274FEB0400C91F22 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37467274FE81600C91F22 /* MessageBuilder.swift */; };
+		70D3746C274FEB1E00C91F22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37469274FE88300C91F22 /* Product.swift */; };
 		OBJ_27 /* Guitar_Shack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Guitar_Shack.swift */; };
 		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_47 /* Guitar_Shack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Guitar Shack::Guitar Shack::Product" /* Guitar_Shack.framework */; };
@@ -236,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				70D3746B274FEB0400C91F22 /* MessageBuilder.swift in Sources */,
+				70D3746C274FEB1E00C91F22 /* Product.swift in Sources */,
 				OBJ_27 /* Guitar_Shack.swift in Sources */,
 				703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */,
 			);

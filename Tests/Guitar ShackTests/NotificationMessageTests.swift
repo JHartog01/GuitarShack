@@ -7,6 +7,7 @@
 
 import Foundation
 import XCTest
+@testable import Guitar_Shack
 
 class NotificationMessageTests: XCTestCase {
     
