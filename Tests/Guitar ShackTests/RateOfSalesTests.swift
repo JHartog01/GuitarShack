@@ -20,8 +20,44 @@ class RateOfSalesTests: XCTestCase {
         }
         
         let salesHistory: SalesHistory = StubSalesHistory()
-        let rateOfSales: RateOfSales = ThirtyDayAverageSales(salesHistory)
+        let rateOfSales: RateOfSales = ThirtyDayAverageSales(salesHistory, currentDate())
         
         XCTAssertEqual(rateOfSales.calculate(811), 2)
+    }
+    
+    func testStartDateOfSalesHistoryIsCorrect() {
+        let starteDateString = "12 Oct 2021"
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMM yyyy"
+        let date = formatter.date(from: starteDateString)
+        
+        class MockSalesHistory: SalesHistory {
+            var startDate : Date?
+            func total(_ productID: Int, _ startDate: Date, _ endDate: Date) -> Int {
+                self.startDate = startDate
+                return 0
+            }
+        }
+        let salesHistory = MockSalesHistory()
+        
+       
+        let rateOfSales: RateOfSales = ThirtyDayAverageSales(salesHistory, currentDate())
+        rateOfSales.calculate(811)
+        
+        XCTAssertEqual(salesHistory.startDate, date)
+    }
+    
+    func currentDate() -> CurrentDate {
+        class StubCurrentDate: CurrentDate {
+            func getDate() -> Date {
+                let currentDateString = "11 Nov 2021"
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd MMM yyyy"
+                let date = formatter.date(from: currentDateString)
+                return date!
+            }
+        }
+        
+        return StubCurrentDate()
     }
 }

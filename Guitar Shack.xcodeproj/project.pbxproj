@@ -33,6 +33,7 @@
 		703721CC2746ACEC009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
 		703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CB2746ACEC009E533F /* NotificationSender.swift */; };
 		703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703721CE2746AF73009E533F /* ReorderChecker.swift */; };
+		70CE0D6227592F4800A7FBD2 /* CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE0D6127592F4800A7FBD2 /* CurrentDate.swift */; };
 		70D37466274FE68300C91F22 /* NotificationMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37465274FE68300C91F22 /* NotificationMessageTests.swift */; };
 		70D37468274FE81600C91F22 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37467274FE81600C91F22 /* MessageBuilder.swift */; };
 		70D3746A274FE88300C91F22 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D37469274FE88300C91F22 /* Product.swift */; };
@@ -71,6 +72,7 @@
 		703721C92746AA84009E533F /* ReorderNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderNotificationTests.swift; sourceTree = "<group>"; };
 		703721CB2746ACEC009E533F /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
 		703721CE2746AF73009E533F /* ReorderChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderChecker.swift; sourceTree = "<group>"; };
+		70CE0D6127592F4800A7FBD2 /* CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDate.swift; sourceTree = "<group>"; };
 		70D37465274FE68300C91F22 /* NotificationMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMessageTests.swift; sourceTree = "<group>"; };
 		70D37467274FE81600C91F22 /* MessageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBuilder.swift; sourceTree = "<group>"; };
 		70D37469274FE88300C91F22 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				70D37467274FE81600C91F22 /* MessageBuilder.swift */,
 				70D37469274FE88300C91F22 /* Product.swift */,
 				2D8A5E1127591D0E00B2C112 /* ThirtyDayAverageSales.swift */,
+				70CE0D6127592F4800A7FBD2 /* CurrentDate.swift */,
 			);
 			name = "Guitar Shack";
 			path = "Sources/Guitar Shack";
@@ -254,6 +257,7 @@
 			buildActionMask = 0;
 			files = (
 				70D3746B274FEB0400C91F22 /* MessageBuilder.swift in Sources */,
+				70CE0D6227592F4800A7FBD2 /* CurrentDate.swift in Sources */,
 				70D3746C274FEB1E00C91F22 /* Product.swift in Sources */,
 				703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */,
 			);
