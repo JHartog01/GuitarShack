@@ -58,12 +58,12 @@ class ReorderNotificationTests: XCTestCase {
         
         let product: Product
         init (_ stock:Int) {
-            self.product = Product(811,stock,"",0,0)
+            self.product = Product(811,stock,"",0,0,5)
         }
     }
     
     private class StubReorderLevel: ReorderLevel {
-        func ofProduct(_ id: Int) -> Int {
+        func ofProduct(_ product: Product) -> Int {
             return reorderLevel
         }
         

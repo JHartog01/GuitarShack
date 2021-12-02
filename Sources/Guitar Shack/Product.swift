@@ -13,12 +13,14 @@ class Product {
     let rackSpace : Int
     let minimumOrder : Int
     let stock : Int
+    let leadTime : Int
     
-    init(_ id:Int, _ stock:Int, _ description:String, _ rackSpace:Int, _ minimumOrder:Int) {
+    init(_ id:Int, _ stock:Int, _ description:String, _ rackSpace:Int, _ minimumOrder:Int, _ leadTime: Int) {
         self.id = id
         self.description = description
         self.rackSpace = rackSpace
         self.minimumOrder = minimumOrder
         self.stock = stock
+        self.leadTime = leadTime
     }
 }
