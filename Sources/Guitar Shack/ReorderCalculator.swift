@@ -17,7 +17,7 @@ class ReorderCalculator: ReorderLevel {
     }
     
     func ofProduct(_ product: Product) -> Int {
-        return Int((Double(product.leadTime) * rateOfSales.calculate()).rounded(.up))
+        return Int((Double(product.leadTime) * rateOfSales.calculate(product.id)).rounded(.up))
             
     }
 }

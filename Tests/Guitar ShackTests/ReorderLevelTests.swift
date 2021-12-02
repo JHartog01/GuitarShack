@@ -13,7 +13,7 @@ class ReorderLevelTests: XCTestCase  {
     
     func testProductReorderThreshold(){
         class StubRateOfSales : RateOfSales {
-            func calculate() -> Double {
+            func calculate(_ productID: Int) -> Double {
                 2
             }
         }

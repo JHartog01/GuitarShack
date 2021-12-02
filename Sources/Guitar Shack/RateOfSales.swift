@@ -9,5 +9,5 @@ import Foundation
 
 protocol RateOfSales {
     
-    func calculate() -> Double
+    func calculate(_ productID : Int) -> Double
 }
