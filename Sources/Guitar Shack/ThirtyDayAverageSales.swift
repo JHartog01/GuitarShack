@@ -21,7 +21,7 @@ class ThirtyDayAverageSales: RateOfSales {
     func calculate(_ productID: Int) -> Double {
         let startDate = Calendar.current.date(byAdding: .day, value: -30, to: currentDate.getDate())
         
-        return Double(salesHistory.total(productID, startDate!, Date())) / 30.0
+        return Double(salesHistory.total(productID, startDate!, currentDate.getDate())) / 30.0
         
     }
     

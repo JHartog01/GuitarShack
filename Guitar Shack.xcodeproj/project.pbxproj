@@ -37,6 +37,7 @@
 		2DFC55CC27906ECA00DBF7FA /* ReorderCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005A6E927590EDE00D057A0 /* ReorderCalculator.swift */; };
 		2DFC55CD27906ECF00DBF7FA /* ThirtyDayAverageSales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A5E1127591D0E00B2C112 /* ThirtyDayAverageSales.swift */; };
 		2DFC55CE27906ED300DBF7FA /* CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE0D6127592F4800A7FBD2 /* CurrentDate.swift */; };
+		2DFC55D0279087CD00DBF7FA /* GuitarShackIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC55CF279087CD00DBF7FA /* GuitarShackIntegrationTests.swift */; };
 		7005A46327907B3B00B75481 /* SalesHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005A46227907B3B00B75481 /* SalesHistoryTests.swift */; };
 		7005A46527907E3A00B75481 /* ProductSalesHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005A46427907E3A00B75481 /* ProductSalesHistory.swift */; };
 		7005A46627907E4900B75481 /* ProductSalesHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005A46427907E3A00B75481 /* ProductSalesHistory.swift */; };
@@ -84,6 +85,7 @@
 		2D8A5E1327591EE200B2C112 /* SalesHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesHistory.swift; sourceTree = "<group>"; };
 		2DFC55C027906CA800DBF7FA /* WarehouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseTests.swift; sourceTree = "<group>"; };
 		2DFC55C227906E6200DBF7FA /* ProductWarehouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWarehouse.swift; sourceTree = "<group>"; };
+		2DFC55CF279087CD00DBF7FA /* GuitarShackIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarShackIntegrationTests.swift; sourceTree = "<group>"; };
 		7005A46227907B3B00B75481 /* SalesHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesHistoryTests.swift; sourceTree = "<group>"; };
 		7005A46427907E3A00B75481 /* ProductSalesHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSalesHistory.swift; sourceTree = "<group>"; };
 		7005A4672790800800B75481 /* SalesTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTotal.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				7005A46227907B3B00B75481 /* SalesHistoryTests.swift */,
 				703721C92746AA84009E533F /* ReorderNotificationTests.swift */,
 				2DFC55C027906CA800DBF7FA /* WarehouseTests.swift */,
+				2DFC55CF279087CD00DBF7FA /* GuitarShackIntegrationTests.swift */,
 			);
 			name = "Guitar ShackTests";
 			path = "Tests/Guitar ShackTests";
@@ -316,6 +319,7 @@
 				7005A6EC27590F9A00D057A0 /* RateOfSales.swift in Sources */,
 				703721CA2746AA84009E533F /* ReorderNotificationTests.swift in Sources */,
 				7005A6E827590CC200D057A0 /* ReorderLevelTests.swift in Sources */,
+				2DFC55D0279087CD00DBF7FA /* GuitarShackIntegrationTests.swift in Sources */,
 				2DFC55C627906E8F00DBF7FA /* ProductWarehouse.swift in Sources */,
 				70D3746A274FE88300C91F22 /* Product.swift in Sources */,
 				70D37466274FE68300C91F22 /* NotificationMessageTests.swift in Sources */,

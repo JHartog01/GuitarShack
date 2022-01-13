@@ -9,14 +9,14 @@ import Foundation
 import XCTest
 @testable import Guitar_Shack
 
-class ReorderNotificationTests: XCTestCase {
-    
-    private class MockNotificationSender: NotificationSender {
-        var message: String = ""
-        func send(_ message: String) {
-            self.message = message
-        }
+class MockNotificationSender: NotificationSender {
+    var message: String = ""
+    func send(_ message: String) {
+        self.message = message
     }
+}
+
+class ReorderNotificationTests: XCTestCase {
     
     func testProductNeedsReordering() {
         let notification : MockNotificationSender = MockNotificationSender()
