@@ -15,6 +15,6 @@ class MessageBuilder {
     }
     
     func build() -> String {
-        "Please reorder product \(product.id): \(product.description), rack space: \(product.rackSpace), minimum order: \(product.minimumOrder)"
+        "Please reorder product \(product.id): \(product.description), rack space: \(product.rackspace), minimum order: \(product.minOrder)"
     }
 }

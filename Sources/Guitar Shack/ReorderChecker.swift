@@ -18,7 +18,7 @@ class ReorderChecker {
     }
     
     func productSold(_ id:Int, _ quantity: Int) {
-        let product = warehouse.getProduct(id)
+        let product = warehouse.getProduct(id)!
         let productReorderLevel = reorderLevel.ofProduct(product)
         if ((product.stock - quantity) <= productReorderLevel) && (product.stock > productReorderLevel) {
             notification.send(MessageBuilder(product).build())

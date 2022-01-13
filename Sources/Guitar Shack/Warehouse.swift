@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Warehouse {
-    func getProduct(_ id : Int) -> Product
+    func getProduct(_ id : Int) -> Product?
 }
