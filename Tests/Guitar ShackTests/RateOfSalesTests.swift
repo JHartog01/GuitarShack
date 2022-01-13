@@ -47,6 +47,7 @@ class RateOfSalesTests: XCTestCase {
         XCTAssertEqual(salesHistory.startDate, date)
     }
     
+    
     func currentDate() -> CurrentDate {
         class StubCurrentDate: CurrentDate {
             func getDate() -> Date {
