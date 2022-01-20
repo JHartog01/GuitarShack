@@ -13,7 +13,7 @@ class GuitarShackIntegrationTests: XCTestCase {
     
     func testNotificationIsSent() {
         let notification: MockNotificationSender = MockNotificationSender()
-        let reorderChecker: ReorderChecker = ReorderChecker(notification, ProductWarehouse(), ReorderCalculator(ThirtyDayAverageSales(ProductSalesHistory(), StubCurrentDate())))
+        let reorderChecker: ReorderChecker = ReorderChecker(notification, ProductWarehouse(), ReorderCalculator(ThirtyDayAverageSales(ProductSalesHistory(baseUrl: "https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/"), StubCurrentDate())))
         reorderChecker.productSold(811, 27)
         XCTAssertFalse(notification.message.isEmpty)
     }

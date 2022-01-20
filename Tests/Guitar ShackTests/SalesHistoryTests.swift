@@ -12,14 +12,27 @@ import XCTest
 
 class SalesHistoryTests: XCTestCase {
     
-    func testTotalSales() {
-     
+    var startDate: Date?
+    var endDate: Date?
+    
+    override func setUp() {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd MMM yyyy"
-        let startDate = formatter.date(from: "17 Jul 2020")
-        let endDate = formatter.date(from: "27 Jul 2020")
+        startDate = formatter.date(from: "17 Jul 2020")
+        endDate = formatter.date(from: "27 Jul 2020")
+    }
+    
+    func testTotalSales() {
+     
         
-        let productSalesHistory = ProductSalesHistory()
+        let productSalesHistory = ProductSalesHistory(baseUrl: "https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/")
         XCTAssertEqual(16, productSalesHistory.total(811,startDate!,endDate!))
+    }
+    
+    func testTotalWithWrongUrl() {
+        
+        let productSalesHistory = ProductSalesHistory(baseUrl: "https://google.com/")
+        XCTAssertEqual(-1, productSalesHistory.total(811, startDate!, endDate!))
+        
     }
 }
