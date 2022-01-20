@@ -12,9 +12,14 @@ import XCTest
 class WarehouseTests: XCTestCase {
     
     func testRetrievesCorrectProduct() {
-        let warehouse: Warehouse = ProductWarehouse()
+        let warehouse: Warehouse = ProductWarehouse(baseURL: "https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/")
         let product = warehouse.getProduct(811)!
         XCTAssertEqual(811, product.id)
+    }
+    
+    func testWarehouseUrlWrong() {
+        let warehouse: Warehouse = ProductWarehouse(baseURL: "https://www.google.com/")
+        XCTAssertNil(warehouse.getProduct(811))
     }
 }
 

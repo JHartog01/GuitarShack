@@ -2,8 +2,14 @@
 import Foundation
 
 class ProductWarehouse: Warehouse {
+    
+    let baseURL: String
+    
+    init(baseURL: String) {
+        self.baseURL = baseURL
+    }
     func getProduct(_ id: Int) -> Product? {
-        let urlString = "https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product?id=\(id)"
+        let urlString = "\(baseURL)default/product?id=\(id)"
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url) {
                 let decoder = JSONDecoder()
