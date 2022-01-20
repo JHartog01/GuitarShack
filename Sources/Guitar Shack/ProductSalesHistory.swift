@@ -16,7 +16,6 @@ class ProductSalesHistory : SalesHistory {
     
     func total(_ productID: Int, _ startDate: Date, _ endDate: Date) -> Int {
         
-        
         let formatter = DateFormatter()
         formatter.dateFormat = "M/d/yyyy"
 

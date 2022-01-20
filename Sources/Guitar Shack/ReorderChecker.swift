@@ -17,10 +17,18 @@ class ReorderChecker {
         self.reorderLevel = reorderLevel
     }
     
+    fileprivate func needsReordering(_ product: Product, _ quantity: Int, _ productReorderLevel: Int) -> Bool {
+        return (product.stock - quantity) <= productReorderLevel
+    }
+    
+    fileprivate func notificationAlreadySent(_ product: Product, _ productReorderLevel: Int) -> Bool {
+        return product.stock <= productReorderLevel
+    }
+    
     func productSold(_ id:Int, _ quantity: Int) {
         let product = warehouse.getProduct(id)!
         let productReorderLevel = reorderLevel.ofProduct(product)
-        if ((product.stock - quantity) <= productReorderLevel) && (product.stock > productReorderLevel) {
+        if (needsReordering(product, quantity, productReorderLevel)) && !(notificationAlreadySent(product, productReorderLevel)) {
             notification.send(MessageBuilder(product).build())
         }
     }
