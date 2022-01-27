@@ -8,17 +8,22 @@ class ProductWarehouse: Warehouse {
     init(baseURL: String) {
         self.baseURL = baseURL
     }
-    func getProduct(_ id: Int) -> Product? {
-        let urlString = "\(baseURL)default/product?id=\(id)"
+    fileprivate func fetch<T: Decodable>(_ urlString: String, responseType: T.Type) -> T? {
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url) {
                 let decoder = JSONDecoder()
-                if let product = try? decoder.decode(Product.self, from: data) {
-                    return product
+                if let response = try? decoder.decode(responseType, from: data) {
+                    return response
                 }
-                    
+                
             }
         }
         return nil
+    }
+    
+    func getProduct(_ id: Int) -> Product? {
+        let urlString = "\(baseURL)default/product?id=\(id)"
+        return fetch(urlString, responseType: Product.self)
+        
     }
 }
