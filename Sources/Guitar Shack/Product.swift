@@ -12,7 +12,7 @@ struct Product: Codable {
     let description : String
     let rackspace : Int
     let minOrder : Int
-    let stock : Int
+    private let stock : Int
     let leadTime : Int
     
     init(_ id:Int, _ stock:Int, _ description:String, _ rackSpace:Int, _ minimumOrder:Int, _ leadTime: Int) {
@@ -22,5 +22,13 @@ struct Product: Codable {
         self.minOrder = minimumOrder
         self.stock = stock
         self.leadTime = leadTime
+    }
+    
+    func needsReordering(_ quantity: Int, _ productReorderLevel: Int) -> Bool {
+        return (stock - quantity) <= productReorderLevel
+    }
+    
+    func notificationAlreadySent(_ productReorderLevel: Int) -> Bool {
+        return stock <= productReorderLevel
     }
 }

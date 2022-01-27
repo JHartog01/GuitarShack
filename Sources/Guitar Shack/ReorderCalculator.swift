@@ -9,7 +9,7 @@ import Foundation
 
 class ReorderCalculator: ReorderLevel {
     
-    let rateOfSales : RateOfSales
+    private let rateOfSales : RateOfSales
     
     init(_ rateOfSales: RateOfSales ){
         self.rateOfSales = rateOfSales

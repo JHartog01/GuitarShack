@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2D6D1DF627A2F33300625BBC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D1DF527A2F33300625BBC /* Network.swift */; };
+		2D6D1DF727A2F33300625BBC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D1DF527A2F33300625BBC /* Network.swift */; };
 		2D771B742746BBD400D729D5 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B732746BBD400D729D5 /* Warehouse.swift */; };
 		2D771B762746BEF100D729D5 /* ReorderLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B752746BEF100D729D5 /* ReorderLevel.swift */; };
 		2D8A5E1027591AC200B2C112 /* RateOfSalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A5E0F27591AC200B2C112 /* RateOfSalesTests.swift */; };
@@ -78,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D6D1DF527A2F33300625BBC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		2D771B732746BBD400D729D5 /* Warehouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warehouse.swift; sourceTree = "<group>"; };
 		2D771B752746BEF100D729D5 /* ReorderLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderLevel.swift; sourceTree = "<group>"; };
 		2D8A5E0F27591AC200B2C112 /* RateOfSalesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateOfSalesTests.swift; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 				2D8A5E1127591D0E00B2C112 /* ThirtyDayAverageSales.swift */,
 				70CE0D6127592F4800A7FBD2 /* CurrentDate.swift */,
 				2DFC55C227906E6200DBF7FA /* ProductWarehouse.swift */,
+				2D6D1DF527A2F33300625BBC /* Network.swift */,
 			);
 			name = "Guitar Shack";
 			path = "Sources/Guitar Shack";
@@ -290,6 +294,7 @@
 				70D3746B274FEB0400C91F22 /* MessageBuilder.swift in Sources */,
 				2DFC55C427906E8500DBF7FA /* ProductWarehouse.swift in Sources */,
 				70CE0D6227592F4800A7FBD2 /* CurrentDate.swift in Sources */,
+				2D6D1DF627A2F33300625BBC /* Network.swift in Sources */,
 				2DFC55CB27906EC800DBF7FA /* SalesHistory.swift in Sources */,
 				70D3746C274FEB1E00C91F22 /* Product.swift in Sources */,
 				703721CD2746ACF8009E533F /* NotificationSender.swift in Sources */,
@@ -330,6 +335,7 @@
 				2D8A5E1227591D0E00B2C112 /* ThirtyDayAverageSales.swift in Sources */,
 				2D771B762746BEF100D729D5 /* ReorderLevel.swift in Sources */,
 				2D771B742746BBD400D729D5 /* Warehouse.swift in Sources */,
+				2D6D1DF727A2F33300625BBC /* Network.swift in Sources */,
 				7005A4692790800800B75481 /* SalesTotal.swift in Sources */,
 				703721CF2746AF73009E533F /* ReorderChecker.swift in Sources */,
 				2DFC55C127906CA800DBF7FA /* WarehouseTests.swift in Sources */,

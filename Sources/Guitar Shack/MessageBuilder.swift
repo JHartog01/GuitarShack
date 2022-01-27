@@ -8,7 +8,7 @@
 import Foundation
 
 class MessageBuilder {
-    let product : Product
+    private let product : Product
     
     init(_ product: Product){
         self.product = product

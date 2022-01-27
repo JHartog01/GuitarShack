@@ -6,12 +6,11 @@
 //
 
 import Foundation
-@testable import Guitar_Shack
 
 class ThirtyDayAverageSales: RateOfSales {
-    let salesHistory : SalesHistory
-    let currentDate : CurrentDate
-    let numberOfDays = 30
+    private let salesHistory : SalesHistory
+    private let currentDate : CurrentDate
+    private let numberOfDays = 30
     
     
     init(_ salesHistory: SalesHistory, _ currentDate: CurrentDate) {

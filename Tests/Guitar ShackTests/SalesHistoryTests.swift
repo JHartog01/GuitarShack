@@ -25,13 +25,13 @@ class SalesHistoryTests: XCTestCase {
     func testTotalSales() {
      
         
-        let productSalesHistory = ProductSalesHistory(baseUrl: "https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/")
+        let productSalesHistory = ProductSalesHistory(baseUrl: "https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/", network: Network())
         XCTAssertEqual(16, productSalesHistory.total(811,startDate!,endDate!))
     }
     
     func testTotalWithWrongUrl() {
         
-        let productSalesHistory = ProductSalesHistory(baseUrl: "https://google.com/")
+        let productSalesHistory = ProductSalesHistory(baseUrl: "https://google.com/", network: Network())
         XCTAssertEqual(-1, productSalesHistory.total(811, startDate!, endDate!))
         
     }

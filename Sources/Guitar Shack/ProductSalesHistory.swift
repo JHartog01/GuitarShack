@@ -8,24 +8,22 @@
 import Foundation
 
 class ProductSalesHistory : SalesHistory {
-    let baseUrl: String
+    private let baseUrl: String
+    private let network: Network
     
-    init(baseUrl: String) {
+    init(baseUrl: String, network: Network) {
         self.baseUrl = baseUrl
+        self.network = network
     }
     
     func total(_ productID: Int, _ startDate: Date, _ endDate: Date) -> Int {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "M/d/yyyy"
+        
+        let urlString = "\(baseUrl)default/sales?productId=\(productID)&startDate=\(formatter.string(from: startDate))&endDate=\(formatter.string(from: endDate))&action=total"
 
-        if let url = URL(string: "\(baseUrl)default/sales?productId=\(productID)&startDate=\(formatter.string(from: startDate))&endDate=\(formatter.string(from: endDate))&action=total") {
-            if let data = try? Data(contentsOf: url){
-                if let salesTotal = try? JSONDecoder().decode(SalesTotal.self, from: data) {
-                    return salesTotal.total
-                }
-            }
-        }
-        return -1
+        let salesTotal = network.fetch(urlString, responseType: SalesTotal.self)
+        return salesTotal?.total ?? -1
     }
 }
